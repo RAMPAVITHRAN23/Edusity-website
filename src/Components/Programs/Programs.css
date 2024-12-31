@@ -1,0 +1,50 @@
+.Programs {
+    display: flex;
+    justify-content: center; /* Centers the images horizontally */
+    align-items: center; /* Ensures vertical alignment */
+    gap: 20px; /* Space between the images */
+    padding: 20px; /* Adds padding around the container */
+    /* Optional: background color for contrast */
+}
+
+.Program {
+    flex: 1; /* Makes all items flexible and take equal space */
+    max-width: 300px; /* Sets a maximum width for each image */
+    text-align: center; /* Centers content within each item */
+    flex-basis: 31%; /* Ensures items don't wrap to the next line */
+    position: relative; /* Allows absolute positioning of the caption */
+}
+
+.Program img {
+    width: 100%; /* Ensures images fill their container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: adds rounded corners to the images */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+.caption {
+    border-radius: 10px; /* Optional: adds rounded corners to the caption */
+    top: 0; /* Aligns the caption to the top of the image */
+    bottom: 0; /* Aligns the caption to the bottom of the image */
+    position: absolute; /* Positions the caption relative to the image */
+    background-color: rgba(0, 15, 152, 0.3);
+    right: 0; /* Aligns the caption to the right of the image */
+    left: 0; /* Aligns the caption to the left of the image */
+    flex-direction: column;
+    color: whitesmoke; /* Sets the text color of the caption */
+    display: flex; /* Allows flex properties to be applied */
+    align-items: center; /* Centers content vertically */
+    justify-content: center;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    opacity: 0; /* Hides the caption by default */
+    padding-top: 70%; /* Adds padding to the top of the caption */
+    transition: 0.4s; /* Smooth transition effect */
+}
+
+.caption img {
+    width: 60px; /* Sets the width of the icon */
+    margin-bottom: 10px;
+}
+.Program:hover .caption {
+    opacity: 1; /* Shows the caption on hover */
+    padding-top: 0; /* Removes padding from the top of the caption */
+}

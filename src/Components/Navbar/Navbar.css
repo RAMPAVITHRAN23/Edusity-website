@@ -1,0 +1,39 @@
+nav {
+    /* background: #333; */
+    width: 100%;
+    color: white;
+    /*color of the text*/
+    padding: 4px 0;
+    /*padding of the content*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    /* add the content side by side*/
+    align-items: center;
+    /*center the content*/
+    justify-content: space-between;
+    /*space between the content*/
+    z-index: 10;
+    /*z-index is used to stack the elements*/
+    padding: 1rem ;
+}
+
+.logo {
+    width: 180px;
+
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    /*display the content in a line*/
+    margin: 5px 20px;
+    /*margin between the content*/
+
+    font-size: 16px;
+}
+.dark-nav{
+    background-color: #1004c0;
+    transition: 0.5s;
+}

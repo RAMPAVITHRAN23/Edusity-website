@@ -1,0 +1,28 @@
+.Campus {
+    width: 90%;
+    margin: 50px auto; /* Center the section and add spacing */
+    text-align: center; /* Center-align the content */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Create a responsive grid */
+    gap: 20px; /* Spacing between images */
+    justify-items: center; /* Center images in their grid cells */
+}
+
+.gallery img {
+    width: 100%; /* Make images responsive */
+    max-width: 300px; /* Optional: limit the maximum size of each image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effect transition */
+    margin-bottom: 30px; /* Add spacing between images */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slightly zoom in on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+    
